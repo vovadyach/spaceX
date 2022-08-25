@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as LogoIcon } from '../../assets/SpaceX-Logo.svg';
 
 export function Header() {
   return (
-    <header data-testid="header">
-      <a href="/">
+    <header>
+      <Link to="/">
         <LogoIcon />
-      </a>
+      </Link>
     </header>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import { MainStyled } from './Main.styled';
 
-export function Main() {
-  return (
-    <main data-testid="main">
-      <h1>Welcome to Space X</h1>
-    </main>
-  );
+interface Props {
+  children: React.ReactNode;
+}
+
+export function Main({ children }: Props) {
+  return <MainStyled>{children}</MainStyled>;
 }
