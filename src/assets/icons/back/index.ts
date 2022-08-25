@@ -1,1 +1,1 @@
-export { ReactComponent as ChartIcon } from './icon.svg';
+export { ReactComponent as BackIcon } from './icon.svg';
