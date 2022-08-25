@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as LogoIcon } from '../../assets/SpaceX-Logo.svg';
+import { HeaderStyled } from './Header.styled';
 
 export function Header() {
   return (
-    <header>
+    <HeaderStyled>
       <Link to="/">
         <LogoIcon />
       </Link>
-    </header>
+    </HeaderStyled>
   );
 }
