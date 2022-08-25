@@ -9,7 +9,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,10 +22,12 @@
   },
   "plugins": [
     "react",
+    "prettier",
     "@typescript-eslint",
     "react-hooks"
   ],
   "rules": {
+    "prettier/prettier": ["error"],
     "no-console": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-use-before-define": "off",

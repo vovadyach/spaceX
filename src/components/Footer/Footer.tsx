@@ -1,9 +1,5 @@
 import React from 'react';
 
 export function Footer() {
-  return (
-    <footer data-testid="footer">
-      Footer
-    </footer>
-  );
+  return <footer data-testid="footer">Footer</footer>;
 }
