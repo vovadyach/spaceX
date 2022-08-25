@@ -1,6 +1,6 @@
 # SpaceX Frontend
 
-## The project using the following tech-stack:
+## Current project using the following tech-stack:
 
 Name | Description
 | :---- | :---|
@@ -47,7 +47,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+A quick look at the top-level files and directories you'll see in a current project.
 
     .
     ├── node_modules

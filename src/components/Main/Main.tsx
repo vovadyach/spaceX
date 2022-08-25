@@ -3,7 +3,7 @@ import React from 'react';
 export function Main() {
   return (
     <main data-testid="main">
-      Main
+      <h1>Welcome to Space X</h1>
     </main>
   );
 }
