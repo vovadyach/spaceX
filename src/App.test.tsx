@@ -1,9 +1,21 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App Component', () => {
+  test('should contains Header', () => {
+    const { getByTestId } = render(<App />);
+    expect(getByTestId('header')).toBeInTheDocument();
+  });
+
+  test('should contains Main', () => {
+    const { getByTestId } = render(<App />);
+    expect(getByTestId('main')).toBeInTheDocument();
+  });
+
+  test('should contains Footer', () => {
+    const { getByTestId } = render(<App />);
+    expect(getByTestId('footer')).toBeInTheDocument();
+  });
 });
