@@ -27,7 +27,9 @@
     "react-hooks"
   ],
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": [
+      "error"
+    ],
     "no-console": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-use-before-define": "off",
@@ -68,8 +70,8 @@
     "comma-dangle": [
       "error",
       {
-        "arrays": "never",
-        "objects": "never",
+        "arrays": "always",
+        "objects": "always",
         "imports": "never",
         "exports": "never",
         "functions": "never"
