@@ -7,10 +7,7 @@ export const rem = (sizeInPx: number): string =>
 export const initialTheme: DefaultTheme = {
   colors: {
     primary: {
-      $600: '#1570ef',
-      $500: '#2e90fa',
-      $400: '#53b1fd',
-      $300: '#84caff',
+      $600: '#005288',
       $200: '#b2ddff',
       $100: '#eff8ff',
     },
@@ -18,6 +15,7 @@ export const initialTheme: DefaultTheme = {
       $600: '#1d2939',
       $500: '#344054',
       $400: '#475467',
+      $100: '#e4e7ec',
     },
     error: {
       $600: '#d92d20',
