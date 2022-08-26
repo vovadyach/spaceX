@@ -1,1 +1,2 @@
-export * from './back';
+export * from './ArrowLeft';
+export * from './ArrowRight';

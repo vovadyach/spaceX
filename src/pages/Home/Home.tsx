@@ -1,9 +1,12 @@
 import React from 'react';
+import { Intro } from './components';
 
 export function Home() {
   return (
-    <div>
+    <>
       <h1>Welcome to Space X Launches</h1>
-    </div>
+
+      <Intro />
+    </>
   );
 }
