@@ -3,3 +3,4 @@ export * from './Footer';
 export * from './Main';
 export * from './Layout';
 export * from './PageTitle';
+export * from './ErrorMessage';
