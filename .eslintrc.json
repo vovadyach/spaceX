@@ -70,11 +70,11 @@
     "comma-dangle": [
       "error",
       {
-        "arrays": "only-multiline",
-        "objects": "only-multiline",
-        "imports": "never",
-        "exports": "never",
-        "functions": "never"
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never",
+        "imports": "always-multiline",
+        "objects": "always-multiline"
       }
     ],
     "react/function-component-definition": [
