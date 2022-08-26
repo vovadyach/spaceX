@@ -70,7 +70,7 @@
     "comma-dangle": [
       "error",
       {
-        "arrays": "only-multiline",
+        "arrays": "never",
         "objects": "only-multiline",
         "imports": "never",
         "exports": "never",
