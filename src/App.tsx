@@ -5,12 +5,16 @@ import { Header, Footer, Main, Layout } from './components';
 import { GlobalStyle } from './styles/globalStyle';
 import { initialTheme } from './styles/theme';
 import { Home, Launches, LaunchDetails } from './pages';
+import { usePreLoader } from './hooks';
+import { PreLoader } from './components/PreLoader';
 
 function App() {
+  const [isPreloading] = usePreLoader();
   return (
     <ThemeProvider theme={initialTheme}>
+      <GlobalStyle />
+      {isPreloading ? <PreLoader /> : null}
       <Layout>
-        <GlobalStyle />
         <Header />
         <Main>
           <Routes>
