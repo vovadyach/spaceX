@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { rem } from '../../styles/theme';
 
 export const MainStyled = styled.main`
-  max-width: ${rem(1024)};
-  padding: ${rem(48)};
+  max-width: ${rem(988)};
+  padding: ${rem(48)} 1.5rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
