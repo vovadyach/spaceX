@@ -1,9 +1,10 @@
 import React from 'react';
+import { PageTitle } from '../../components';
 
 export function LaunchDetails() {
   return (
     <div>
-      <h1>Launch Details</h1>
+      <PageTitle title="Launch Details" />
     </div>
   );
 }
