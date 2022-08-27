@@ -10,12 +10,12 @@ import { useLaunchById } from './Launch.hook';
 import { ArrowLeft } from '../../assets/icons';
 import { RelatedMissions } from './components';
 
-type ParamsPros = {
+type ParamsProps = {
   id: string;
 };
 
 export function LaunchDetails() {
-  const { id } = useParams<ParamsPros>();
+  const { id } = useParams<ParamsProps>();
   const { data, loading, error } = useLaunchById({
     variables: {
       id: typeof id === 'string' ? parseFloat(id) : 0,
