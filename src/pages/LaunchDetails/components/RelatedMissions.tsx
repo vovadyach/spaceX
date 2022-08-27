@@ -1,6 +1,7 @@
 import React from 'react';
 import { useMissionList } from './RelatedMissions.hook';
 import { ErrorMessage } from '../../../shared/components';
+import { ERROR_MESSAGE } from '../../../shared/constants';
 
 type Props = {
   rocketName: string | undefined;
@@ -22,7 +23,7 @@ export function RelatedMissions({ rocketName }: Props) {
   }
 
   if (error) {
-    return <ErrorMessage text="Data couldn't be retrieved." />;
+    return <ErrorMessage text={ERROR_MESSAGE.DATA_FETCH} />;
   }
 
   return (

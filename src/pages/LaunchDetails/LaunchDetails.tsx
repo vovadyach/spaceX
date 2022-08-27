@@ -9,6 +9,7 @@ import {
 import { useLaunchById } from './Launch.hook';
 import { ArrowLeft } from '../../assets/icons';
 import { RelatedMissions } from './components';
+import { ERROR_MESSAGE } from '../../shared/constants';
 
 type ParamsProps = {
   id: string;
@@ -33,7 +34,7 @@ export function LaunchDetails() {
     return (
       <>
         {pageBackLink}
-        <ErrorMessage text="Something went wrong. Please try again later" />
+        <ErrorMessage text={ERROR_MESSAGE.COMMON} />
       </>
     );
   }

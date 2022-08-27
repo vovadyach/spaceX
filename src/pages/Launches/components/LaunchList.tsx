@@ -2,6 +2,7 @@ import React from 'react';
 import { ErrorMessage, SkeletonGrid } from '../../../shared/components';
 import { useLaunchList } from '../Launches.hook';
 import { LaunchListItem } from './LaunchListItem';
+import { ERROR_MESSAGE } from '../../../shared/constants';
 
 export function LaunchList() {
   const { data, loading, error } = useLaunchList({
@@ -15,9 +16,7 @@ export function LaunchList() {
   }
 
   if (error) {
-    return (
-      <ErrorMessage text="Something went wrong. Please try again later." />
-    );
+    return <ErrorMessage text={ERROR_MESSAGE.COMMON} />;
   }
 
   return (
