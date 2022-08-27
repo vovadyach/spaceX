@@ -5,16 +5,18 @@ import { LinkStyled } from '../../../../shared/components';
 import { ArrowRight } from '../../../../assets/icons';
 
 export function Intro() {
-  const linkTitle = 'Check out our past launches';
-
   return (
     <IntroStyled>
       <IntroFigureStyled>
         <img src={Rocket} alt="Rocket" />
       </IntroFigureStyled>
 
-      <LinkStyled direction="append" to="launches" title={linkTitle}>
-        {linkTitle}
+      <LinkStyled
+        direction="append"
+        to="launches"
+        title="Click to see our past launches"
+      >
+        Check out our past launches
         <ArrowRight />
       </LinkStyled>
     </IntroStyled>

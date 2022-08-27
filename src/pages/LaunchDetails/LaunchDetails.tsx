@@ -23,7 +23,7 @@ export function LaunchDetails() {
   });
 
   const pageBackLink = (
-    <LinkStyled direction="prepend" to="/launches" title="Launches">
+    <LinkStyled direction="prepend" to="/launches" title="Go back to Launches">
       <ArrowLeft />
       Back
     </LinkStyled>
