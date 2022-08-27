@@ -1,7 +1,7 @@
 import React from 'react';
 import Rocket from '../../../../assets/images/rocket.png';
 import { IntroStyled, IntroFigureStyled } from './Intro.styled';
-import { LinkStyled } from '../../../../shared/components/Link';
+import { LinkStyled } from '../../../../shared/components';
 import { ArrowRight } from '../../../../assets/icons';
 
 export function Intro() {
