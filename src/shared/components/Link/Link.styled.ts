@@ -2,10 +2,14 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { rem } from '../../styles/theme';
 
-export const LinkStyled = styled(Link)`
+type Props = {
+  direction?: string;
+};
+
+export const LinkStyled = styled(Link)<Props>`
   color: ${({ theme }) => theme.colors.primary.$600};
   display: inline-flex;
-  align-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
@@ -14,9 +18,14 @@ export const LinkStyled = styled(Link)`
 
   .icon {
     transition: transform 0.15s ease-out;
-    margin-left: ${rem(6)};
 
-    path:nth-child(2) {
+    ${({ direction }) =>
+      direction === 'append'
+        ? `
+    margin-left: ${rem(6)};
+  `
+        : ` margin-right: ${rem(6)};`}
+    &__fill {
       fill: currentColor;
     }
   }
@@ -26,7 +35,8 @@ export const LinkStyled = styled(Link)`
     text-decoration: underline;
 
     .icon {
-      transform: translateX(8px);
+      transform: ${({ direction }) =>
+        `translateX(${direction === 'append' ? '8px' : '-8px'})`};
     }
   }
 `;

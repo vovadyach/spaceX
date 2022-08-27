@@ -1,1 +1,1 @@
-export * from './LaunchDetail';
+export * from './Launch';

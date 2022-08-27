@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { rem } from '../../../../styles/theme';
+import { rem } from '../../../../shared/styles/theme';
 
 export const IntroStyled = styled.div`
   text-align: center;

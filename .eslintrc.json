@@ -89,6 +89,7 @@
         "devDependencies": true
       }
     ],
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "react/require-default-props": "off"
   }
 }
