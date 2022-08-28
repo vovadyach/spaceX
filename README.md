@@ -1,6 +1,6 @@
 # SpaceX Frontend
-
-## Current project using the following tech-stack:
+## GraphQL API: [https://api.spacex.land/graphql](https://api.spacex.land/graphql)
+### The following tech stack:
 
 Name | Description
 | :---- | :---|
