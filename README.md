@@ -79,5 +79,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 cd existing_repo
 git remote add origin https://github.com/spacex/spacex-frontend.git
 git branch -M main
-git push -uf origin main
+git push -u origin main
 ```
