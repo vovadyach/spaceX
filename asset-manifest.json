@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/spaceX/static/js/main.be0a523d.js",
+    "static/js/787.c30a6e17.chunk.js": "/spaceX/static/js/787.c30a6e17.chunk.js",
+    "static/media/rocket.png": "/spaceX/static/media/rocket.5bd0c80f553a345cd4ca.png",
+    "static/media/SpaceX-Logo.svg": "/spaceX/static/media/SpaceX-Logo.3f836d6b4bd4e5fb1c92f0b10f8f03e5.svg",
+    "index.html": "/spaceX/index.html",
+    "static/media/icon.svg": "/spaceX/static/media/icon.fae4682866feecf428434ff3a1c5ba01.svg",
+    "main.be0a523d.js.map": "/spaceX/static/js/main.be0a523d.js.map",
+    "787.c30a6e17.chunk.js.map": "/spaceX/static/js/787.c30a6e17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.be0a523d.js"
+  ]
+}
