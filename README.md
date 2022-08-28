@@ -1,6 +1,12 @@
 # SpaceX Frontend
-## GraphQL API: [https://api.spacex.land/graphql](https://api.spacex.land/graphql)
-### The following tech stack:
+## API: [https://api.spacex.land/graphql](https://api.spacex.land/graphql)
+
+## The following tech stack:
+<img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+<img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://camo.githubusercontent.com/db03a0406c84f3ee075338e579342ad1b58dbdb384a409d42f980711134e54c5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f41706f6c6c6f5f4772617068514c2532302d2532333331314338372e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d41706f6c6c6f2532304772617068514c266c6f676f436f6c6f723d7768697465" />
+<img src="https://camo.githubusercontent.com/c9d2cbcaf75e92ba3721968772c7957d90b4834c06c96d7afece76442d27d9dc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4772617068514c2532302d2532334531303039382e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d4772617068514c266c6f676f436f6c6f723d7768697465" />
+<img src="https://camo.githubusercontent.com/db35ec5de1b8557e884d220114f8b1b672d94b47d58f307931733f5044a1abd9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374796c65642d2d636f6d706f6e656e74732532302d2532334442373039332e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d7374796c65642d636f6d706f6e656e7473266c6f676f436f6c6f723d7768697465" />
 
 Name | Description
 | :---- | :---|
@@ -9,6 +15,7 @@ Typescript |  A strongly typed programming language that builds on JavaScript, g
 GraphQL       |  A query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
 ApolloClient  | A comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL. Use it to fetch, cache, and modify application data, all while automatically updating your UI.
 Styled-components | A library built for React and React Native developers. It allows you to use component-level styles in your applications. Styled-components leverage a mixture of JavaScript and CSS using a technique called CSS-in-JS.
+
 
 ## Getting started
 
