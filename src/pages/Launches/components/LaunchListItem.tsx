@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Launch } from '../Launches.types';
+import { dateFormat } from '../../../shared/utils';
+import { LaunchItemStyled } from './LaunchItem.styled';
 
 type LaunchListItemProps = {
   launch: Launch;
@@ -8,11 +9,19 @@ type LaunchListItemProps = {
 
 export function LaunchListItem({ launch }: LaunchListItemProps) {
   return (
-    <Link to={`launches/${launch.id}`}>
-      <div>{launch.launch_date_local}</div>
-      <div>{launch.mission_name}</div>
+    <LaunchItemStyled to={`/launches/${launch.id}`}>
+      <h3>{launch.mission_name}</h3>
+      <div>
+        <strong>Date: </strong>
+        <time>
+          <em>{dateFormat(launch.launch_date_local, 'en-US')}</em>
+        </time>
+      </div>
+      <div>
+        <strong>Rocket: </strong>
+        {launch.rocket.rocket_name}
+      </div>
       <div>{launch.launch_success}</div>
-      <div>{launch.rocket.rocket_name}</div>
-    </Link>
+    </LaunchItemStyled>
   );
 }

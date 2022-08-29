@@ -1,5 +1,10 @@
 import React from 'react';
-import { ErrorMessage, SkeletonGrid } from '../../../shared/components';
+import {
+  ErrorMessage,
+  FlexGrid,
+  FlexGridItem,
+  SkeletonGrid,
+} from '../../../shared/components';
 import { useLaunchList } from '../Launches.hook';
 import { LaunchListItem } from './LaunchListItem';
 import { ERROR_MESSAGE } from '../../../shared/constants';
@@ -20,11 +25,12 @@ export function LaunchList() {
   }
 
   return (
-    <div>
-      <h2>Launch list goe here...</h2>
+    <FlexGrid gap={24}>
       {data?.launches.map(launch => (
-        <LaunchListItem key={launch.id} launch={launch} />
+        <FlexGridItem key={launch.id}>
+          <LaunchListItem key={launch.id} launch={launch} />
+        </FlexGridItem>
       ))}
-    </div>
+    </FlexGrid>
   );
 }
