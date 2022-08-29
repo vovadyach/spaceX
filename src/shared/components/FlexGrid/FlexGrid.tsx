@@ -1,14 +1,11 @@
 import React from 'react';
-import { FlexGridItemStyled, FlexGridStyled } from './FlexGrid.styled';
+import { FlexGridStyled } from './FlexGrid.styled';
 
 type Props = {
   children: React.ReactNode;
+  gap?: number;
 };
 
-export function FlexGrid({ children }: Props) {
-  return <FlexGridStyled>{children}</FlexGridStyled>;
-}
-
-export function FlexGridItem({ children }: Props) {
-  return <FlexGridItemStyled>{children}</FlexGridItemStyled>;
+export function FlexGrid({ children, gap }: Props) {
+  return <FlexGridStyled gap={gap}>{children}</FlexGridStyled>;
 }

@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import { rem } from '../../styles/theme';
+import { FlexGridItemStyled } from './FlexGridItem.styled';
 
-export const FlexGridStyled = styled.div`
+type Props = {
+  gap?: number;
+};
+
+export const FlexGridStyled = styled.div<Props>`
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -9,12 +14,12 @@ export const FlexGridStyled = styled.div`
   flex-wrap: wrap;
   margin-left: -${rem(12)};
   margin-right: -${rem(12)};
-`;
 
-export const FlexGridItemStyled = styled.div`
-  flex: 0 0 auto;
-  padding-left: ${rem(12)};
-  padding-right: ${rem(12)};
-  flex-basis: 50%;
-  max-width: 50%;
+  ${({ gap }) =>
+    gap &&
+    `
+    ${FlexGridItemStyled} {
+    margin-bottom: ${rem(gap)};
+    }
+  `}
 `;
