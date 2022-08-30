@@ -6,6 +6,6 @@ type TErrorMessage = {
 
 export const ERROR_MESSAGE: TErrorMessage = {
   COMMON: 'Something went wrong. Please, try again later.',
-  DATA_FETCH: 'Page could no be found.',
+  DATA_FETCH: 'Data could not be retrieved',
   PAGE_NOT_FOUND: 'Page could not be found',
 };

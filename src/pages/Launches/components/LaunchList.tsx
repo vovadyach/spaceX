@@ -7,7 +7,7 @@ import {
 } from '../../../shared/components';
 import { useLaunchList } from '../Launches.hook';
 import { LaunchListItem } from './LaunchListItem';
-import { ERROR_MESSAGE } from '../../../shared/constants';
+import { ERROR_MESSAGE } from '../../../shared/utils';
 
 export function LaunchList() {
   const { data, loading, error } = useLaunchList({

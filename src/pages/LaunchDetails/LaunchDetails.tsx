@@ -9,7 +9,7 @@ import {
 import { useLaunchById } from './Launch.hook';
 import { ArrowLeft } from '../../assets/icons';
 import { RelatedMissions } from './components';
-import { ERROR_MESSAGE } from '../../shared/constants';
+import { ERROR_MESSAGE } from '../../shared/utils';
 
 type ParamsProps = {
   id: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMissionList } from './RelatedMissions.hook';
 import { ErrorMessage } from '../../../shared/components';
-import { ERROR_MESSAGE } from '../../../shared/constants';
+import { ERROR_MESSAGE } from '../../../shared/utils';
 
 type Props = {
   rocketName: string | undefined;
