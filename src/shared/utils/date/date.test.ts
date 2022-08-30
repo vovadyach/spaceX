@@ -1,4 +1,4 @@
-import { dateFormat } from '.';
+import { dateFormat } from './date';
 
 describe('Date functionality', () => {
   const dateStr = '2010-09-16T15:13:46.677020+00:00';
